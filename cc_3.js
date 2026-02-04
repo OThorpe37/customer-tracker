@@ -23,3 +23,6 @@ let customers = [Sarah, Tom, Emma];
 
 customers.push(Colin);
 customers.shift();
+
+Emma.email = "emmabryant@gmail.com"
+Tom.purchases.push("Coffee");
