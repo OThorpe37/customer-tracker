@@ -26,3 +26,10 @@ customers.shift();
 
 Emma.email = "emmabryant@gmail.com"
 Tom.purchases.push("Coffee");
+
+customers.forEach(customer => {
+    console.log(
+    `Name: ${customer.name}, Email: ${customer.email}, Total Purchases: ${customer.purchases.length}`
+    );
+});
+
