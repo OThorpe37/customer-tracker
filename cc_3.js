@@ -13,5 +13,13 @@ let Emma = {
     "email": "emma@gmail.com",
     "purchases": ["Eggs", "Bread", "Butter"]
 };
+let Colin = {
+    "name": "Colin",
+    "email": "colin@gmail.com",
+    "purchases": ["Juice", "Apples", "Bananas"]
+};
 
 let customers = [Sarah, Tom, Emma];
+
+customers.push(Colin);
+customers.shift();
