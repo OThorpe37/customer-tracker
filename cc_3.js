@@ -1,32 +1,34 @@
-let Sarah = {
+let customers = [{
     "name": "Sarah",
     "email": "sarah@gmail.com",
     "purchases": ["Milk", "Peanut Butter", "Yogurt"]
-};
-let Tom = {
-    "name": "Tom",
+},
+{    "name": "Tom",
     "email": "tom@gmail.com",
-    "purchases": ["Bread", "Butter", "Jam"]
-};
-let Emma = {
-    "name": "Emma",
+    "purchases": ["Bread", "Butter", "Jam"]},
+{ "name": "Emma",
     "email": "emma@gmail.com",
-    "purchases": ["Eggs", "Bread", "Butter"]
-};
-let Colin = {
+    "purchases": ["Eggs", "Bread", "Butter"]},
+];
+
+customers.push({
     "name": "Colin",
     "email": "colin@gmail.com",
     "purchases": ["Juice", "Apples", "Bananas"]
-};
+});
 
-let customers = [Sarah, Tom, Emma];
-
-customers.push(Colin);
 customers.shift();
 
-Emma.email = "emmabryant@gmail.com"
-Tom.purchases.push("Coffee");
-
+for (let customer of customers) {
+    if (customer.name == 'Emma') {
+        customer.email = "emma@cool.net"
+    }
+}
+for (let customer of customers) {
+    if (customer.name == 'Tom') {
+        customer.purchases.push("Coffee")
+    }
+}
 customers.forEach(customer => {
     console.log(
     `Name: ${customer.name}, Email: ${customer.email}, Total Purchases: ${customer.purchases.length}`
